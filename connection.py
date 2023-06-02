@@ -5,6 +5,11 @@ import git
 import yaml
 from git import Repo
 
+LOCALPATH = os.path.abspath("./") + f"/temp_file_location_REPOS"
+BANNED_YAML = "/banned.yaml"
+SPHINX_YAML = os.path.abspath("./") + "/sphinx_repositories.yaml"
+LOCAL_REQUIREMENTS = os.path.abspath("./") + f"/requirements{uuid.uuid1()}.txt"
+
 class MultRepoPuller:
     """
     A class for managing multiple Git repositories in a local folder.
